@@ -23,7 +23,7 @@ services:
       - "3306:3306"
     volumes:
       - db:/var/lib/mysql
-      - ./ajc.sql:/docker-entrypoint-initdb.d/dbperpus.sql
+      - ./dbperpus.sql:/docker-entrypoint-initdb.d/dbperpus.sql
     networks:
       - backend
 
